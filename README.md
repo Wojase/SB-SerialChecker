@@ -1,15 +1,15 @@
 # 🌟 SB-SerialChecker
 
-SB-SerialChecker is a visually enhanced batch script designed to display the serial numbers and hardware details of the user's computer in an engaging and colorful way. This tool is for **educational purposes only** and demonstrates how batch scripting can be used to retrieve and display system information.
+SB-SerialChecker is a Python-based program designed to display the serial numbers and hardware details of the user's computer in an engaging and colorful way. This tool is for **educational purposes only** and demonstrates how Python can be used to retrieve and display system information.
 
 ---
 
 ## ⚡ Features
 - 🖥️ **Displays System Serial Numbers**: Retrieves and shows key hardware serial numbers.
-- 🎨 **Colorful and Engaging**: Enhanced visuals for a better command-line experience.
-- 🔍 **Detailed Hardware Information**: Displays details like disk drive, CPU, BIOS, motherboard, and UUID.
-- 📂 **Lightweight and Portable**: A single `.bat` file that works immediately.
-- 💻 **Looped Execution**: Allows repeated checks with a single key press.
+- 🎨 **Colorful and Engaging**: Enhanced visuals for a better terminal experience using Python libraries.
+- 🔍 **Detailed Hardware Information**: Displays details like disk drive, CPU, BIOS, motherboard, UUID, and MAC addresses.
+- 📂 **Lightweight and Portable**: A single Python script that works immediately with minimal dependencies.
+- 💻 **Interactive Execution**: Allows repeated checks with a single command.
 
 ---
 
@@ -17,31 +17,33 @@ SB-SerialChecker is a visually enhanced batch script designed to display the ser
 
 1. Clone or download the repository:
    ```bash
-   git clone https://github.com/YourUsername/SB-SerialChecker.git
+   git clone https://github.com/Wojase/SB-SerialChecker.git
    cd SB-SerialChecker
    ```
 
-2. Run the batch script:
-   ```
-   SB-SerialChecker.bat
+2. Install the required Python packages:
+   ```bash
+   pip install -r requirements.txt
    ```
 
-3. View the displayed system information, such as:
+3. Run the Python script:
+   ```bash
+   python sb_serial_checker.py
+   ```
+
+4. View the displayed system information, such as:
    - Disk Drive Serial Number
    - CPU Serial Number
    - BIOS Serial Number
    - Motherboard Serial Number
    - smBIOS UUID
-
-4. Press any key to rerun the check or close the program.
+   - MAC Addresses
 
 ---
 
 ## 📖 Example Output
 
-```batch
-> SB-SerialChecker.bat
-
+```python
 **********************************
 🌟 Hardware Serial Checker 🌟
 **********************************
@@ -62,11 +64,12 @@ Serial Number: AB1234567890
 🆔 smBIOS UUID:
 UUID: 12345678-90AB-CDEF-1234-567890ABCDEF
 
-🔗 MAC Address:
-00-14-22-01-23-45
+🔗 MAC Addresses:
+00:14:22:01:23:45
+02:42:AC:11:00:03
 
 ====================================
-✨ Press any key to check again! ✨
+✨ Check complete! Run the script again to refresh. ✨
 ```
 
 ---
@@ -92,9 +95,5 @@ If you find this project useful, please consider giving it a ⭐ on GitHub. Your
 
 ---
 
-## 📫 Contact
-For any questions or issues, feel free to open an [issue](https://github.com/YourUsername/SB-SerialChecker/issues) or contact me at your-email@example.com.
+### Made with ❤️ by Wojas
 
----
-
-### Made with ❤️ by YourUsername
